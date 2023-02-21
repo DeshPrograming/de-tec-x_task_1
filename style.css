@@ -1,0 +1,138 @@
+.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(60, 16, 155, 0.8);
+    background-image: url("assets/img/bg-desktop.svg");
+    background-size: cover;
+    z-index: 1;
+    background-repeat: no-repeat;
+}
+
+.mycontent {
+    margin: 50px;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+    background-image: url("assets/img/logo.svg");
+    background-repeat: no-repeat;
+}
+
+.image {
+    background-image: url("assets/img/illustration-mockups.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* height: 500px;
+    width: max-content; */
+}
+
+.detail {
+    color: white;
+    margin-bottom: 150px;
+    /* margin-top: 100px; */
+    padding-top: 50px;
+}
+
+.h1 {
+    margin-left: 10px;
+    margin-top: 150px;
+}
+
+.p {
+    font-size: 18px;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+.button {
+    background-color: white;
+    color: rgba(60, 16, 155, 0.8);
+    border-radius: 25px;
+    border: none;
+    margin-left: 10px;
+    height: 50px;
+}
+
+.social {
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    align-content: flex-end;
+    align-self: flex-end;
+    float: right;
+}
+
+.social a {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    color: white;
+    width: 45px;
+    height: 45px;
+    line-height: 40px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.button:hover {
+    background-color: rgb(204, 66, 204);
+    color: white;
+}
+
+.social :hover {
+    cursor: pointer;
+    color: rgb(204, 66, 204);
+}
+
+.social a:hover {
+    border-color: rgb(204, 66, 204);
+}
+
+@media(max-width: 991px) {
+    .image {
+        background-image: url("assets/img/illustration-mockups.svg");
+        /* background-size: cover; */
+        background-repeat: no-repeat;
+        height: 300px;
+        width: max-content;
+    }
+    .back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: fit-content;
+        background: rgba(60, 16, 155, 0.8);
+        background-image: url("assets/img/bg-mobile.svg");
+        z-index: 1;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .h1 {
+        margin-left: 0px;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .p {
+        margin-left: 10px;
+        margin-top: 30px;
+        text-align: center;
+        font-size: 21px;
+    }
+    .social {
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: none;
+    }
+    .detail {
+        margin-bottom: 100px;
+    }
+}
